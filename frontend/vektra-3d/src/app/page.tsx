@@ -1,10 +1,11 @@
 import { LayoutTemplate, Folder, Image, FilePlus, Send, LucideProps } from "lucide-react";
 import { FC, ElementType } from 'react';
+import Link from "next/link";
 
 const VektraLogo = () => (
     <div className="flex items-center gap-3">
       <img src="/vektra_logo.png" alt="Vektra Logo" className="h-16 w-16" />
-      <span className="text-2xl font-bold tracking-wider">Vektra-3D</span>
+      <span className="text-2xl font-bold tracking-wider text-blue-500">Vektra-3D</span>
     </div>
 );
 
@@ -35,7 +36,9 @@ export default function Home() {
           <ActionButton icon={LayoutTemplate} text="Comece com um template." />
           <ActionButton icon={Folder} text="Abrir projeto." />
           <ActionButton icon={Image} text="Comece com uma imagem." />
-          <ActionButton icon={FilePlus} text="Comece com um modelo vazio." />
+          <Link href="/userScreenInitial">
+            <ActionButton icon={FilePlus} text="Comece com um modelo vazio." />
+          </Link>
         </aside>
 
         <main className="w-[500px] flex items-center justify-center py-20">
