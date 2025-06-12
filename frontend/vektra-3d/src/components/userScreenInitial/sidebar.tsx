@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from 'react';
 import { ResizableBox } from 'react-resizable';
 import 'react-resizable/css/styles.css';
