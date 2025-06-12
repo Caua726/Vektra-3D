@@ -4,3 +4,10 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+tobj = { version = "4.0.0", features = ["log"] }
+winit = "0.29"
+wgpu = "0.19"
+pollster = "0.3"
+cgmath = "0.18"
+bytemuck = { version = "1.12", features = [ "derive" ] }
+env_logger = "0.11"

@@ -1,24 +1,24 @@
 import cube.obj as cube-001
 
 object{ 
-    obj: cube-001
-    position: [0, 0, 0]
-    rotation: [0, 0, 0]
+    obj: cube-001,
+    position: [0, 0, 0],
+    rotation: [0, 0, 0],
     scale: [1, 1, 1]
 }
 
 keyframe(0) {
     object: cube-001{
-        position: [0, 0, 0]
-        rotation: [0, 0, 0]
+        position: [-5, 0, 0],
+        rotation: [0, 0, 0],
         scale: [1, 1, 1]    
     }
 }
 
 keyframe(5) {
     object: cube-001{
-        position: [1, 0, 0]
-        rotation: [0, 0, 0]
+        position: [5, 0, 0],
+        rotation: [0, 0, 0],
         scale: [1, 1, 1]
     }
 }

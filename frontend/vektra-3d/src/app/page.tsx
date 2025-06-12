@@ -36,7 +36,7 @@ export default function Home() {
           <ActionButton icon={LayoutTemplate} text="Comece com um template." />
           <ActionButton icon={Folder} text="Abrir projeto." />
           <ActionButton icon={Image} text="Comece com uma imagem." />
-          <Link href="/userScreenInitial" className="block">
+          <Link href="/userScreenInitial" style={{ cursor: 'pointer' }}>
             <ActionButton icon={FilePlus} text="Comece com um modelo vazio." />
           </Link>
         </aside>
