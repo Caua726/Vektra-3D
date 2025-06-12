@@ -1,9 +1,24 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
+import { ResizableBox } from 'react-resizable';
+import 'react-resizable/css/styles.css';
 
 const Sidebar = () => {
+  const [width, setWidth] = useState(320); // 320px is w-80 in tailwind
+
   return (
-    <aside className="w-100 bg-[#212121] text-white flex flex-col h-screen shrink-0">
-      <div className="p-4">
+    <ResizableBox
+      width={width}
+      height={Infinity}
+      axis="x"
+      minConstraints={[200, Infinity]}
+      maxConstraints={[600, Infinity]}
+      onResize={(e, data) => setWidth(data.size.width)}
+      className="bg-[#212121] text-white flex flex-col h-screen shrink-0 relative"
+      handle={<div className="absolute top-1/2 right-0 w-2 h-10 bg-gray-600 cursor-col-resize rounded" />}
+    >
+      <div className="p-4 overflow-y-auto">
         <nav className="border-b border-gray-700">
           <ul className="flex items-center space-x-4 text-sm">
             <li className="pb-2 border-b-2 border-white">
@@ -31,7 +46,7 @@ const Sidebar = () => {
           </ul>
         </div>
       </div>
-    </aside>
+    </ResizableBox>
   );
 };
 
