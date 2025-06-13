@@ -56,6 +56,10 @@ Os projetos são salvos no formato `.vektra`, que armazena informações sobre:
 
 Se precisar de ajuda, encontrou um bug ou quer sugerir algo novo, entre no nosso servidor no Discord:
 
+> If you have any question, see our [english official documentation](core/vekscript/docs/en-US)
+
+> Se você tiver qualquer dúvida, visite nossa [versão em portugues da documentação.](core/vekscript/docs/pt-BR)
+
 🔗 [Clique aqui para entrar no Discord](https://discord.gg/QXawnqDj4N)
 
 Ou entre em contato diretamente:
